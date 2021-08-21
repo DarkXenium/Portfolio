@@ -1,0 +1,100 @@
+@import "../../global.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
+.progress {
+  background-color: $mainColor;
+  display: flex;
+  flex-direction: column;
+  height: 120%;
+  align-items: center;
+
+  h1 {
+    color: white;
+    font-size: 40px;
+    // margin-top: 8%;
+    padding: 30px;
+    overflow: hidden;
+
+    @include mobile {
+      font-size: 35px;
+      margin-bottom: 0px;
+      padding: 10px 0px;
+    }
+  }
+  h3 {
+    overflow: hidden;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    font-weight: 400;
+    padding: 10px;
+    margin: 4px;
+    margin-bottom: 10px;
+    @include mobile {
+      padding: 30px;
+    }
+  }
+  .container {
+    width: 90%;
+    height: 120%;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    .item {
+      position: relative;
+      display: flex;
+      width: 230px;
+      height: 100px;
+      text-align: center;
+      background-color: #808080;
+      transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+      transition: 0.5s;
+      box-shadow: -30px 30px 10px rgba(0, 0, 0, 0.5);
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+      }
+
+      @include mobile {
+        flex-direction: column;
+        width: 112px;
+        margin: 19px;
+        height: 67px;
+      }
+
+      h2 {
+        font-size: 21px;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        @include mobile {
+          font-size: 15px;
+          padding: 6px;
+          font-weight: 300;
+        }
+      }
+
+      img {
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+        margin: 10px 20px;
+
+        @include mobile {
+          width: 45px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
