@@ -198,7 +198,7 @@ const Landing = () => {
             </Button>
           </a>
         </ColumnLeft>
-        <ColumnRight>
+        {/* <ColumnRight>
           <Image
             src="images/code.gif"
             alt="planet"
@@ -227,7 +227,7 @@ const Landing = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
           />
-        </ColumnRight>
+        </ColumnRight> */}
       </Container>
     </Section>
   );
