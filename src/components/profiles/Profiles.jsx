@@ -11,7 +11,6 @@ export default function Profiles() {
 const animation = useAnimation();
 const animationLeft = useAnimation();
 useEffect(() => {
-    console.log("use effect hook, inView=", inView);
     if (inView) {
         animation.start({
             x: 0,

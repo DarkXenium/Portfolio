@@ -11,7 +11,6 @@ export default function Progress() {
     const animation = useAnimation();
     const animationLeft = useAnimation();
     useEffect(() => {
-        console.log("use effect hook, inView=", inView);
         if (inView) {
             animation.start({
                 y: 0,
@@ -49,6 +48,10 @@ export default function Progress() {
             <motion.div className="container"
                 animate={animationLeft}
             >
+                <div className="item">
+                    <img src="images/csharp.png" alt="" />
+                    <h2>C# (C-Sharp)</h2>
+                </div>
                 <div className="item">
                     <img src="images/html.webp" alt="" />
                     <h2>HTML</h2>

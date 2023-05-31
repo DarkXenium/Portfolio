@@ -9,7 +9,6 @@ export default function Contact() {
 const animation = useAnimation();
 const animationLeft = useAnimation();
 useEffect(() => {
-    console.log("use effect hook, inView=", inView);
     if (inView) {
         animation.start({
            opacity:1,
