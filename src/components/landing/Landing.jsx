@@ -1,7 +1,7 @@
 import React from "react";
 import "./landing.scss";
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
 const media = {
   desktop: "@media(max-width:1024px)",
@@ -39,7 +39,7 @@ const ColumnLeft = styled.div`
 
   h1 {
     margin-bottom: 0.5rem;
-    font-size: 40px;
+    font-size: 33px;
     font-weight: 900;
   }
   h2 {
@@ -65,11 +65,11 @@ const ColumnLeft = styled.div`
   p {
     margin: 2rem 0;
     overflow: hidden;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1;
     color: white;
-    font-weight:500;
-    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
     ${media.desktop} {
       font-size: 2rem;
     }
@@ -142,6 +142,8 @@ const ColumnRight = styled.div`
 `;
 
 const Landing = () => {
+  const animationLeft = useAnimation();
+
   const fadeLeft = {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0 },
@@ -163,25 +165,25 @@ const Landing = () => {
             variants={fadeLeft}
             initial="hidden"
             animate="visible"
-            transition={{ duration: 2 }}
+            transition={{ duration: 1.5 }}
           >
             I'm Avinash Kumar
           </motion.p>
           <motion.h2
-            initial={{ scale: 1.4 }}
+            initial={{ scale: 1.2 }}
             animate={{ scale: 1 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1.5 }}
           >
             Welcome to my Website
           </motion.h2>
-          <motion.h2
+          {/* <motion.h2
             id="vertical"
             initial="hidden"
             animate="visible"
             transition={{ duration: 1 }}
           >
             You can Drag the items around &gt;&gt;&gt;
-          </motion.h2>
+          </motion.h2> */}
           <a href="#intro">
             <Button
               whileHover={{ scale: 0.9 }}
@@ -198,36 +200,9 @@ const Landing = () => {
             </Button>
           </a>
         </ColumnLeft>
-        {/* <ColumnRight>
-          <Image
-            src="images/code.gif"
-            alt="planet"
-            whileTap={{ scale: 0.9 }}
-            drag={true}
-            dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
-          />
-
-          <Image
-            src="images/repeat2.gif"
-            alt="planet"
-            whileTap={{ scale: 0.8 }}
-            drag={true}
-            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 50 }}
-            initial={{ opacity: 0, x: -100, y: -100 }}
-            animate={{ opacity: 1, x: 0, y: 0, transition: { duration: 1 } }}
-          />
-          <Image
-            src="images/mobilep.gif"
-            alt="planet"
-            whileTap={{ scale: 0.9 }}
-            drag={true}
-            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
-          />
-        </ColumnRight> */}
+        <ColumnRight>
+          <img className="myphoto" src="images/profile.jpg" alt="image" />
+        </ColumnRight>
       </Container>
     </Section>
   );

@@ -9,7 +9,7 @@
 
   h1 {
     color: white;
-    font-size: 40px;
+    font-size: 5vmin;
     // margin-top: 8%;
     padding: 30px;
     overflow: hidden;
@@ -25,9 +25,10 @@
     font-family: "Roboto Mono", monospace;
     color: white;
     font-weight: 400;
+    font-size: 3vmin;
     padding: 10px;
     margin: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 5vmin;
     @include mobile {
       padding: 30px;
     }
@@ -49,8 +50,8 @@
     .item {
       position: relative;
       display: flex;
-      width: 230px;
-      height: 100px;
+      width: 200px;
+      height: 80px;
       text-align: center;
       background-color: #808080;
       transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
@@ -70,9 +71,10 @@
       }
 
       h2 {
-        font-size: 21px;
+        font-size: 3vmin;
         color: whitesmoke;
         display: flex;
+        font-weight: 180;
         align-items: center;
         justify-content: center;
         overflow: hidden;
@@ -85,8 +87,8 @@
       }
 
       img {
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
         overflow: hidden;
         margin: 10px 20px;
 

@@ -12,7 +12,7 @@
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 5vmin;
     // margin-bottom: 30px;
     margin: 60px;
     color: white;
@@ -84,14 +84,14 @@
         img {
           &.left,
           &.right {
-            height: 25px;
+            height: 20px;
             @include mobile {
               height: 18px;
             }
           }
           &.user {
-            height: 80px;
-            width: 80px;
+            height: 50px;
+            width: 50px;
             border-radius: 50%;
             object-fit: cover;
             margin: 0 30px;

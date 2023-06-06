@@ -53,6 +53,10 @@ export default function Progress() {
                     <h2>C# (C-Sharp)</h2>
                 </div>
                 <div className="item">
+                    <img src="images/asp_logo.png" alt="" />
+                    <h2>ASP.NET</h2>
+                </div>
+                <div className="item">
                     <img src="images/html.webp" alt="" />
                     <h2>HTML</h2>
                 </div>
@@ -79,6 +83,11 @@ export default function Progress() {
                 <div className="item">
                     <img src="images/js.webp" alt="" />
                     <h2>Javascript</h2>
+
+                </div>
+                <div className="item">
+                    <img src="images/redux_original_logo.png" alt="" />
+                    <h2>Redux</h2>
 
                 </div>
                 <div className="item">

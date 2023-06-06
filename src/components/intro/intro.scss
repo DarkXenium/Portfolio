@@ -24,13 +24,17 @@
     .left {
         flex: 0.5;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
         .imgContainer {
             overflow: hidden;
-            height: 700px;
+            height: 750px;
             // width: 700px;
             width: 800px;
             display: flex;
             position: absolute;
+            flex-direction: column;
+            justify-content:flex-end;
             transition: all 1s ease-in-out;
             @include mobile {
                 height: 600px;
@@ -76,6 +80,7 @@
 
         }
     }
+    
     .right {
         flex: 0.5;
         position: relative;
@@ -88,13 +93,33 @@
             justify-content: center;
             text-align: justify;
 
+            .btnContainers{
+                display: flex;
+                // justify-content: flex-start;
+                flex-direction: row;
+                position: relative;
+                .btn2{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+                .btn2drive{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    #previewSVG{
+                        padding-left: 1vmin;
+                    }
+                }
+            }
+
             @include mobile {
                 padding-left: 0px;
                 align-items: center;
             }
 
             h1 {
-                font-size: 30px;
+                font-size: 3.5vmin;
                 margin: 10px 0px;
                 padding: 10px;
                 font-family: "Roboto Mono", monospace;
@@ -107,7 +132,7 @@
             }
             h2 {
                 font-family: "Roboto Mono", monospace;
-                font-size: 25px;
+                font-size: 3vmin;
                 font-weight: 18;
                 margin-right: 10vmin;
                 padding: 10px;
@@ -120,7 +145,7 @@
                 }
             }
             h3 {
-                font-size: 30px;
+                font-size: 4vmin;
                 padding: 10px;
                 font-family: "Roboto Mono", monospace;
 
@@ -169,4 +194,8 @@
             }
         }
     }
+}
+#driveBtn{
+    display: flex;
+    align-items: center;
 }

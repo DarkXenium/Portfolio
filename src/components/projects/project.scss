@@ -22,15 +22,18 @@ a {
 }
 h3.heading{
 	margin-bottom: 30px;
+	font-size: 3vmin;
 }
 h1.heading{
-	font-size: 40px;
+	margin-bottom: 2vmin;
+	font-size: 5vmin;
+	
 }
 #projects{
 	overflow: hidden;
 }
 p {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: black;
 	margin-bottom: 26px;
 	font-family: "Roboto Mono", monospace;
@@ -63,16 +66,20 @@ font-weight: 300;
 	border: 2px solid #6200d3;
 	color: #6200d3;
 }
-
+.projectsContainer{
+	display: flex;
+	flex-direction: row;
+}
 #projects .item {
 	display: flex;
 	overflow: hidden;
 	align-items: center;
 	justify-content: center;
-	max-width: 800px;
+	max-width: 600px;
+	height: 500px;
 	margin: 0 auto;
 	margin-bottom: 5rem;
-	gap: 2rem;
+	gap: 0rem;
 	@include mobile {
 		margin: 30px 30px;
 	  }
