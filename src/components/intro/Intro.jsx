@@ -77,7 +77,7 @@ export default function Intro() {
         <div className="imgContainer">
           <img
             // draggable="false"
-            src="images/Avinash_Kumar_page-0001-min.jpg"
+            src="images/resume-mini.jpg"
             alt="Resume_Image"
           />
         </div>
@@ -122,7 +122,7 @@ export default function Intro() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { duration: 1.5 } }}
               >
-                Open
+                Open PDF
                 <div className="btn2drive">
                   <svg
                     id="previewSVG"

@@ -10,6 +10,7 @@ import Project from "./components/projects/Project";
 import "./app.scss";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Experience from "./components/experience/Experience";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,6 +23,7 @@ function App() {
         <Landing />
         <Intro />
         <Project />
+        <Experience />
         <Work />
         <Progress />
         <Profiles />

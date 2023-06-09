@@ -32,7 +32,7 @@ export default function Project() {
       animation.start({
         x: "100vw",
         opacity: 0,
-        y: 100,
+        y: 0,
       });
       animationLeft.start({
         opacity: 0,

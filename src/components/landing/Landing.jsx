@@ -148,7 +148,6 @@ const Landing = () => {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0 },
   };
-
   return (
     <Section id="landing">
       <Container>
@@ -201,7 +200,13 @@ const Landing = () => {
           </a>
         </ColumnLeft>
         <ColumnRight>
-          <img className="myphoto" src="images/profile.jpg" alt="image" />
+          <motion.img
+            initial={{ opacity: 0, size:1.5 }}
+            animate={{ opacity: 1, transition: { duration: 2 } }}
+            className="myphoto"
+            src="images/profile.jpg"
+            alt="image"
+          />
         </ColumnRight>
       </Container>
     </Section>

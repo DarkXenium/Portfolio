@@ -2,6 +2,8 @@ $mainColor: rgb(26, 26, 26);
 
 $width: 1024px;
 
+$secondaryColor : #6200d3;
+
 @mixin mobile {
     @media (max-width: #{$width}){
         @content
