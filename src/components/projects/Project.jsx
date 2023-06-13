@@ -120,7 +120,7 @@ export default function Project() {
                 Source Code
               </a>
               <a
-                href="https://darkxenium-blogs.herokuapp.com/"
+                href="https://darkxenium-blogs.onrender.com/"
                 class="primary-btn outline external-link"
               >
                 <span>Preview</span>
