@@ -74,7 +74,7 @@ export default function Profiles() {
     {
       id: 5,
       name: "LinkedIn",
-      title: "https://www.linkedin.com/in/avinash-kumar-9246851b8/",
+      title: "https://www.linkedin.com/in/avinash-kumar03/",
       img: "images/linkedin.webp",
       desc: "I try to learn new technologies and implement them through projects. And what better place to showcase them than here.",
     },
