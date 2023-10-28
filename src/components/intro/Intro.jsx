@@ -141,7 +141,7 @@ export default function Intro() {
             </div>
           </div>
           <h2>
-            As a recent Computer Science graduate, I bring a growth mindset,
+            As a Computer Science graduate, I bring a growth mindset,
             flexibility, and problem-solving skills to the table. I'm eager to
             apply the skills I've acquired through my studies and
             extracurricular activities. Open to learning new technologies, I'm

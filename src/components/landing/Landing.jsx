@@ -201,10 +201,10 @@ const Landing = () => {
         </ColumnLeft>
         <ColumnRight>
           <motion.img
-            initial={{ opacity: 0, size:1.5 }}
+            initial={{ opacity: 0, size: 1.5 }}
             animate={{ opacity: 1, transition: { duration: 2 } }}
             className="myphoto"
-            src="images/profile.jpg"
+            src="images/profilepic.png"
             alt="image"
           />
         </ColumnRight>
