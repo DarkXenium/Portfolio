@@ -56,7 +56,7 @@ export default function Project() {
             </div>
           </div>
           <div class="right">
-            <h2 class="project-title">Pokemon Eclipse</h2>
+            <h2 class="project-title">Pokemon ElipseZ</h2>
             <h3 class="project-sub-title">
               <b>A Web-Game</b>
             </h3>
@@ -74,7 +74,7 @@ export default function Project() {
                 Source Code
               </a>
               <a
-                href="https://pokemon-eclipse.netlify.app/"
+                href="https://pokemon-elisez.netlify.app/"
                 class="primary-btn outline external-link"
               >
                 <span>Preview</span>
