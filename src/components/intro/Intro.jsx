@@ -141,14 +141,13 @@ export default function Intro() {
             </div>
           </div>
           <h2>
-            As a Computer Science graduate, I bring a growth mindset,
-            flexibility, and problem-solving skills to the table. I'm eager to
-            apply the skills I've acquired through my studies and
-            extracurricular activities. Open to learning new technologies, I'm
-            always striving to improve. Constructive criticism helps me grow
-            professionally, and my persistence and willingness to learn make me
-            a valuable asset to any company. Actively seeking opportunities to
-            contribute to a team and continue my career.
+            As a passionate software engineer based in Bangalore, I have
+            professional experience at SafeSend and CuriousJr. Skilled in C#,
+            .NET, React JS, and MS SQL, I excel in back-end development and UI
+            enhancement. With certifications in Azure, React JS, SQL, frontend
+            development, and both high-level and low-level design, I am
+            committed to continuous learning and professional growth, making me
+            a valuable asset to any team.
           </h2>
           <h1>Some of things I am interested in </h1>
           <h3>

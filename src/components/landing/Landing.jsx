@@ -1,4 +1,3 @@
-import React from "react";
 import "./landing.scss";
 import styled from "styled-components";
 import { motion, useAnimation } from "framer-motion";
@@ -19,9 +18,7 @@ const Section = styled.section`
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 118vh;
-  padding: 3rem calc((100vw - 1300px) / 2);
+  grid-template-columns: 1fr 2fr;
 
   @media screen and (max-width: 768px) {
     grid-grid-template-columns: 1fr;
@@ -93,8 +90,8 @@ const Image = styled(motion.img)`
   position: absolute;
   width: 100%;
   height: 100%;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 15rem;
+  max-height: 15rem;
 `;
 
 const ColumnRight = styled.div`
@@ -106,7 +103,7 @@ const ColumnRight = styled.div`
   overflow: hidden;
 
   ${Image}:nth-child(1) {
-    top: 65px;
+    top: 1rem;
     left: 5px;
 
     ${media.desktop} {
@@ -117,7 +114,7 @@ const ColumnRight = styled.div`
   }
 
   ${Image}:nth-child(2) {
-    top: 160px;
+    top: 0rem;
     right: 30px;
     width: 600px;
     height: 160px;
@@ -130,8 +127,8 @@ const ColumnRight = styled.div`
   }
 
   ${Image}:nth-child(3) {
-    top: 350px;
-    left: 50px;
+    top: 26rem;
+    right: 1rem;
     ${media.desktop} {
       top: 30rem;
       left: 2rem;
@@ -175,14 +172,14 @@ const Landing = () => {
           >
             Welcome to my Website
           </motion.h2>
-          {/* <motion.h2
+          <motion.h2
             id="vertical"
             initial="hidden"
             animate="visible"
             transition={{ duration: 1 }}
           >
             You can Drag the items around &gt;&gt;&gt;
-          </motion.h2> */}
+          </motion.h2>
           <a href="#intro">
             <Button
               whileHover={{ scale: 0.9 }}
@@ -200,13 +197,57 @@ const Landing = () => {
           </a>
         </ColumnLeft>
         <ColumnRight>
-          <motion.img
-            initial={{ opacity: 0, size: 1.5 }}
-            animate={{ opacity: 1, transition: { duration: 2 } }}
-            className="myphoto"
-            src="images/profilepic.png"
-            alt="image"
+          <Image
+            src="images/code.gif"
+            alt="code"
+            whileTap={{ scale: 0.9 }}
+            drag={true}
+            dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
+            initial={{ opacity: 0, y: -100 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              zIndex: 1,
+              transition: { duration: 1 },
+            }}
           />
+
+          <Image
+            src="images/repeat2.gif"
+            alt="onrepeat"
+            whileTap={{ scale: 0.8 }}
+            drag={true}
+            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 50 }}
+            initial={{ opacity: 0, x: -100, y: -100 }}
+            animate={{
+              opacity: 1,
+              x: 0,
+              y: 0,
+              zIndex: 1,
+              transition: { duration: 1 },
+            }}
+          />
+          <Image
+            src="images/mobilep.gif"
+            alt="mobile"
+            whileTap={{ scale: 0.9 }}
+            drag={true}
+            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            initial={{ opacity: 0, y: 100, zIndex: 0 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              zIndex: 1,
+              transition: { duration: 1 },
+            }}
+          />
+          <motion.div
+            className="workstationImage"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 1 } }}
+          >
+            <img src="images/codingOnTwoPcs.gif  " alt="workstation" />
+          </motion.div>
         </ColumnRight>
       </Container>
     </Section>

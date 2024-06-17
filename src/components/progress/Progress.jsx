@@ -94,10 +94,10 @@ export default function Progress() {
                     <img src="images/react.webp" alt="" />
                     <h2>React JS</h2>
                 </div>
-                <div className="item">
+                {/* <div className="item">
                     <img src="images/nextjs.webp" alt="" />
                     <h2>Next JS</h2>
-                </div>
+                </div> */}
                 <div className="item">
                     <img src="images/blockly.svg" alt="" />
                     <h2>Blockly JS</h2>

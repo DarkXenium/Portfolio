@@ -7,10 +7,9 @@ import Menu from "./components/menu/Menu";
 import Progress from "./components/progress/Progress";
 import Landing from "./components/landing/Landing";
 import Project from "./components/projects/Project";
-import "./app.scss";
-import { motion } from "framer-motion";
-import { useState } from "react";
 import Experience from "./components/experience/Experience";
+import { useState } from "react";
+import "./app.scss";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
