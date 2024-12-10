@@ -107,8 +107,6 @@ export default function Work() {
                   alt=""
                 />
               </motion.div>
-
-              {/* </a> */}
             </motion.div>
           </div>
         ))}

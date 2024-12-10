@@ -35,6 +35,49 @@ const Experience = () => {
         <ul className="timeline">
           <li>
             <div className="timeline-photo">
+              <a href="https://safesend.com/" target="_blank">
+                <img src="images/safesend.jpg" alt="safesend Photo" />
+              </a>
+            </div>
+            <div className="timeline-content">
+              <small className="date">
+                Jun 2024 - <bold id="presentColor">PRESENT</bold>
+              </small>
+              <h2 id="safesend">SafeSend</h2>
+              <h3 className="positionTitle">Software Engineer 1</h3>
+              <p className="companyInfo">
+                1. Utilized C#, .NET, and MS SQL for efficient back‐end
+                development, optimizing data management processes. 2. Improved
+                user interface with React JS, resolved bugs, and contributed to
+                API development for seamless functionality. 3. Enhanced code
+                coverage and developed scalable microservices, improving system
+                performance and maintainability.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className="timeline-photo">
+              <a href="https://safesend.com/" target="_blank">
+                <img src="images/safesend.jpg" alt="safesend Photo" />
+              </a>
+            </div>
+            <div className="timeline-content">
+              <small className="date">FEB 2023 - Jun 2024</small>
+              <h2 id="safesend">SafeSend</h2>
+              <h3 className="positionTitle">Associate Software Engineer</h3>
+              <p className="companyInfo">
+                1. Collaborating with other engineers on designing and
+                implementing new features using C#, .NET, and React JS. 2.
+                Assisting in the optimization of database operations and
+                ensuring data integrity with MS SQL. 3. Participating in code
+                reviews and debugging sessions to maintain high code quality and
+                performance. Supporting the development of APIs and
+                microservices, ensuring seamless integration and scalability.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className="timeline-photo">
               <a href="https://curiousjr.com/" target="_blank">
                 <img src="images/curiousjr.png" alt="curiousjr Photo" />
               </a>
@@ -53,28 +96,6 @@ const Experience = () => {
                 Additionally, I took on the responsibility of mentoring fellow
                 interns. This opportunity allowed me to enhance my skills while
                 contributing to the team's success.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div className="timeline-photo">
-              <a href="https://safesend.com/" target="_blank">
-                <img src="images/safesend.jpg" alt="safesend Photo" />
-              </a>
-            </div>
-            <div className="timeline-content">
-              <small className="date">
-                FEB 2023 - <bold id="presentColor">PRESENT</bold>
-              </small>
-              <h2 id="safesend">SafeSend</h2>
-              <h3 className="positionTitle">Associate Software Engineer</h3>
-              <p className="companyInfo">
-                Currently, I work at SafeSend where I contribute to the
-                development of various tax-filing products which is used in the
-                USA. My role involves utilizing C# and ASP.NET in the backend,
-                along with React.js in the frontend. Additionally, I actively
-                engage in working with microservices and regularly undertake
-                proof-of-concept (POC) projects.
               </p>
             </div>
           </li>

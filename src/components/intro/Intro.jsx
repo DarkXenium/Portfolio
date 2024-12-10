@@ -75,11 +75,7 @@ export default function Intro() {
     <div ref={ref} className="intro" id="intro">
       <motion.div className="left" animate={animationLeft}>
         <div className="imgContainer">
-          <img
-            // draggable="false"
-            src="images/resume-mini.jpg"
-            alt="Resume_Image"
-          />
+          <img src="images/resume.jpg" alt="Resume_Image" />
         </div>
       </motion.div>
       <motion.div className="right" animate={animation}>
@@ -100,15 +96,6 @@ export default function Intro() {
             >
               Download
             </Button>
-
-            {/* <div
-              onClick={() =>
-                window.open(
-                  "https://drive.google.com/file/d/191gzWpnqTDpmQY-SHllV6nWLrilRCt3J/view?usp=sharing",
-                  "_blank"
-                )
-              }
-            > */}
             <div onClick={() => window.open("Avinash_Kumar.pdf", "_blank")}>
               <Button
                 whileHover={{ scale: 0.9 }}
