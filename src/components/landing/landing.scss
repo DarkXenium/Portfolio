@@ -1,10 +1,16 @@
-.landing{
-    overflow: hidden;
+.landing {
+  overflow: hidden;
 }
-b{
-    overflow: hidden;
-    color: crimson;
+b {
+  overflow: hidden;
+  color: crimson;
 }
 .workstationImage {
-    border-radius: 30px;
+  border-radius: 30px;
+}
+.floatImgs {
+  cursor: pointer;
+}
+.floatImgs:hover {
+  scale: 0.99;
 }

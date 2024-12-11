@@ -210,6 +210,7 @@ const Landing = () => {
               zIndex: 1,
               transition: { duration: 1 },
             }}
+            className="floatImgs"
           />
 
           <Image
@@ -226,6 +227,7 @@ const Landing = () => {
               zIndex: 1,
               transition: { duration: 1 },
             }}
+            className="floatImgs"
           />
           <Image
             src="images/mobilep.gif"
@@ -240,6 +242,7 @@ const Landing = () => {
               zIndex: 1,
               transition: { duration: 1 },
             }}
+            className="floatImgs"
           />
           <motion.div
             className="workstationImage"
