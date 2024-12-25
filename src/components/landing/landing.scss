@@ -14,3 +14,25 @@ b {
 .floatImgs:hover {
   scale: 0.99;
 }
+
+// Mobile view css
+@media screen and (max-width:450px){
+  #landing p{
+    font-size: 7vmin;
+  }
+  #landing h1{
+    font-size: 6vmin;
+  }
+  #landing h2{
+    font-size: 4vmin;
+  }
+  #landing #about-me-button {
+    font-size: 3vmin;
+    padding: 2vmin 7vmin;
+  }
+  #landing #vertical {
+    font-size: 3vmin;
+  }
+
+}
+

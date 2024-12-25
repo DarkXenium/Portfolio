@@ -145,7 +145,7 @@ a:hover {
 /* RESPONSIVE */
 @media screen and (max-width: 991px) {
   .timeline-container {
-    width: 100%;
+    width: 80%;
     padding: 15px;
   }
   .timeline li:nth-child(odd) > .timeline-content,
@@ -155,6 +155,9 @@ a:hover {
     padding-left: 120px;
     padding-right: 15px;
     text-align: left;
+    @include mobile{
+    width: 70%;
+    }
   }
   .timeline:after,
   .timeline li:last-child:before,
@@ -182,11 +185,13 @@ a:hover {
   .timeline:after,
   .timeline li:first-child:before,
   .timeline li:last-child:before {
-    left: 35px;
+    left: 36px;
   }
   .timeline-photo {
     width: 70px;
     height: 70px;
+    left: 5px;
+    top: 15px;
   }
   .timeline-readmore {
     transform: scale(0.85);
@@ -257,7 +262,26 @@ li:nth-of-type(2) .companyInfo {
 .positionTitle {
   color: gainsboro;
   margin-bottom: 1vmin;
+  @include mobile{
+    font-size: 3vmin;
+  }
 }
 #presentColor {
   color: $secondaryColor;
+}
+
+h3.heading{
+  @include mobile{
+    font-weight: 100;
+    text-align: justify;
+    font-size: 3vmin;
+    margin: 4vmin 4vmin;
+    padding: 0 4vmin;
+  }
+}
+
+p.companyInfo{
+  @include mobile{
+    text-align: left;
+  }
 }

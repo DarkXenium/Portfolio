@@ -69,6 +69,9 @@ font-weight: 300;
 .projectsContainer{
 	display: flex;
 	flex-direction: row;
+	@include mobile{
+		display: block;
+	}
 }
 #projects .item {
 	display: flex;
