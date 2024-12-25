@@ -37,9 +37,10 @@
             justify-content:flex-end;
             transition: all 1s ease-in-out;
             @include mobile {
-                height: 600px;
-                left: -115px;
-                top: 750px;
+                height: 500px;
+                left: -23vmin;
+                bottom: -60vmax;
+                margin: 0;
             }
             
             img{
@@ -109,10 +110,14 @@
                     flex-direction: row;
                     #previewSVG{
                         padding-left: 1vmin;
+
+                        @include mobile{
+                            height: 4.5vmin;
+                        }
                     }
                 }
             }
-
+            
             @include mobile {
                 padding-left: 0px;
                 align-items: center;
@@ -128,6 +133,8 @@
                     font-size: 26px;
                     margin: 3px 27px;
                     padding: 6px;
+                    overflow: hidden;
+                    margin-bottom: 1vmax;
                 }
             }
             h2 {
@@ -198,4 +205,13 @@
 #driveBtn{
     display: flex;
     align-items: center;
+    @include mobile{
+        font-size: 4vmin;
+        padding: 8px 1rem;
+    }
+}
+ .intro .right .wrapper h2 {
+    @include mobile{
+        font-size: 4vmin;
+    }
 }

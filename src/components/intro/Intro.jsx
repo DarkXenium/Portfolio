@@ -60,7 +60,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 200,
       backSpeed: 30,
-      strings: ["Web Development!", "Coding!", "UI/UX Design!"],
+      strings: ["Web Development!", "Coding!", "UI/UX Design!", "End-To-End Application Dev!"],
     });
   }, []);
 
@@ -127,7 +127,7 @@ export default function Intro() {
               </Button>
             </div>
           </div>
-          <h2>
+          <h2 className="introParagraph">
             As a passionate software engineer based in Bangalore, I have
             professional experience at SafeSend and CuriousJr. Skilled in C#,
             .NET, React JS, and MS SQL, I excel in back-end development and UI
