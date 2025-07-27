@@ -1,4 +1,4 @@
-import "./experience.scss";
+import "./workExperience.scss";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useRef } from "react";
@@ -35,23 +35,21 @@ const Experience = () => {
         <ul className="timeline">
           <li>
             <div className="timeline-photo">
-              <a href="https://safesend.com/" target="_blank">
-                <img src="images/safesend.jpg" alt="safesend Photo" />
+              <a href="https://thomsonreuters.com/" target="_blank">
+                <img src="images/trLogo.png" alt="thomsonreuters Logo" />
               </a>
             </div>
             <div className="timeline-content">
-              <small className="date">
-                Jun 2024 - <bold id="presentColor">PRESENT</bold>
-              </small>
-              <h2 id="safesend">SafeSend</h2>
-              <h3 className="positionTitle">Software Engineer 1</h3>
+              <small className="date">May 2025 - <bold id="presentColor">PRESENT</bold></small>
+              <h2 id="curiousjr">Thomson Reuters</h2>
+              <h3 className="positionTitle">
+                Software Engineer
+              </h3>
               <p className="companyInfo">
-                1. Utilized C#, .NET, and MS SQL for efficient back‐end
-                development, optimizing data management processes. 2. Improved
-                user interface with React JS, resolved bugs, and contributed to
-                API development for seamless functionality. 3. Enhanced code
-                coverage and developed scalable microservices, improving system
-                performance and maintainability.
+                1. Contributed to the development of enterprise-grade legal and financial technology solutions, ensuring reliability and compliance with industry standards. 
+                2. Worked extensively with <b>C#, .NET</b> for back-end development and <b>React JS</b> for crafting user-centric, responsive front-end interfaces.
+                3. Collaborated closely with cross-functional teams to implement scalable APIs and microservices that improved data flow and performance.
+                4. Involved in performance optimization, debugging, and code reviews to uphold code quality, security, and maintainability.
               </p>
             </div>
           </li>
@@ -62,6 +60,19 @@ const Experience = () => {
               </a>
             </div>
             <div className="timeline-content">
+              <small className="date">
+                Jun 2024 - April 2025
+              </small>
+              <h2 id="safesend">SafeSend</h2>
+              <h3 className="positionTitle">Software Engineer</h3>
+              <p className="companyInfo">
+                1. Utilized C#, .NET, and MS SQL for efficient back‐end
+                development, optimizing data management processes. 2. Improved
+                user interface with React JS, resolved bugs, and contributed to
+                API development for seamless functionality. 3. Enhanced code
+                coverage and developed scalable microservices, improving system
+                performance and maintainability.
+              </p>
               <small className="date">FEB 2023 - Jun 2024</small>
               <h2 id="safesend">SafeSend</h2>
               <h3 className="positionTitle">Associate Software Engineer</h3>

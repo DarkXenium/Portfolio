@@ -148,14 +148,14 @@ const Landing = () => {
   return (
     <Section id="landing">
       <Container>
-        <ColumnLeft>
+        <ColumnLeft className="columnLeft">
           <motion.h1
             variants={fadeLeft}
             initial="hidden"
             animate="visible"
             transition={{ duration: 1 }}
           >
-            Hi there <b>!</b>
+            Hey there<b>!</b> 👋
           </motion.h1>
           <motion.p
             variants={fadeLeft}
@@ -163,14 +163,14 @@ const Landing = () => {
             animate="visible"
             transition={{ duration: 1.5 }}
           >
-            I'm Avinash Kumar
+            I'm Avinash Kumar  Full Stack Developer
           </motion.p>
           <motion.h2
             initial={{ scale: 1.2 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1.5 }}
           >
-            Welcome to my Website
+            Welcome to my personal portfolio. <br />Explore, interact, and get to know me better!
           </motion.h2>
           <motion.h2
             id="vertical"
@@ -207,7 +207,8 @@ const Landing = () => {
             initial={{ opacity: 0, y: -100 }}
             animate={{
               opacity: 1,
-              y: 0,
+              y: 20,
+              x: 240,
               zIndex: 1,
               transition: { duration: 1 },
             }}
@@ -223,8 +224,8 @@ const Landing = () => {
             initial={{ opacity: 0, x: -100, y: -100 }}
             animate={{
               opacity: 1,
-              x: 0,
-              y: 0,
+              x: -100,
+              y: 20,
               zIndex: 1,
               transition: { duration: 1 },
             }}
@@ -240,17 +241,18 @@ const Landing = () => {
             animate={{
               opacity: 1,
               y: 0,
+              x: -200,
               zIndex: 1,
               transition: { duration: 1 },
             }}
             className="floatImgs"
           />
           <motion.div
-            className="workstationImage"
+            className="selfPortrait"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1 } }}
           >
-            <img src="images/codingOnTwoPcs.gif  " alt="workstation" />
+            <img id="selfPortrait" src="images/selfPortrait.webp  " alt="selfPortrait" />
           </motion.div>
         </ColumnRight>
       </Container>

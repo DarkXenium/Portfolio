@@ -1,38 +1,54 @@
 .landing {
   overflow: hidden;
 }
+
 b {
   overflow: hidden;
   color: crimson;
 }
-.workstationImage {
-  border-radius: 30px;
-}
+
 .floatImgs {
   cursor: pointer;
 }
+
 .floatImgs:hover {
   scale: 0.99;
 }
 
+#selfPortrait {
+  width: 35%;
+  border-radius: 30px;
+}
+
+.selfPortrait {
+  display: flex;
+  justify-content: center;
+}
+
 // Mobile view css
-@media screen and (max-width:450px){
-  #landing p{
+@media screen and (max-width:450px) {
+  #landing p {
     font-size: 7vmin;
   }
-  #landing h1{
+
+  #landing h1 {
     font-size: 6vmin;
   }
-  #landing h2{
+
+  #landing h2 {
     font-size: 4vmin;
   }
+
   #landing #about-me-button {
     font-size: 3vmin;
     padding: 2vmin 7vmin;
   }
+
   #landing #vertical {
     font-size: 3vmin;
   }
 
 }
-
+.columnLeft {
+  margin: 0 0 0 100px;
+}
