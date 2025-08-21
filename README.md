@@ -1,8 +1,6 @@
-
 # DarkXenium Portfolio
 
 Its a personel Portfolio Website.
-
 
 ## Deployment
 
@@ -25,5 +23,3 @@ yarn start
 To Visit App:
 
 https://avinash-kumar.netlify.app/
-
-  

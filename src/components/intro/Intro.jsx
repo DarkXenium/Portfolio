@@ -66,7 +66,7 @@ export default function Intro() {
 
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = process.env.PUBLIC_URL + "/Avinash_Kumar.pdf";
+    link.href = "/public/Avinash_Kumar.pdf";
     link.download = "Avinash_Kumar.pdf";
     link.click();
   };
@@ -128,13 +128,8 @@ export default function Intro() {
             </div>
           </div>
           <h2 className="introParagraph">
-            As a passionate software engineer based in Bangalore, I have
-            professional experience at SafeSend and CuriousJr. Skilled in C#,
-            .NET, React JS, and MS SQL, I excel in back-end development and UI
-            enhancement. With certifications in Azure, React JS, SQL, frontend
-            development, and both high-level and low-level design, I am
-            committed to continuous learning and professional growth, making me
-            a valuable asset to any team.
+            As a dedicated Software Engineer based in Bangalore with over 2 years of professional experience, I’ve contributed to impactful projects at SafeSend and CuriousJr. My core strengths lie in full-stack development, with expertise in C#, .NET, React JS, and MS SQL — delivering robust back-end systems and seamless front-end experiences.
+            I hold certifications in Azure, React JS, SQL, front-end development, and both high-level and low-level system design. My passion for continuous learning and clean, scalable code makes me a reliable and growth-focused contributor to any development team.
           </h2>
           <h1>Some of things I am interested in </h1>
           <h3>
