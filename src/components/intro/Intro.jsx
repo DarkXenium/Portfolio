@@ -66,7 +66,7 @@ export default function Intro() {
 
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = process.env.PUBLIC_URL + "/Avinash_Kumar.pdf";
+    link.href = "/public/Avinash_Kumar.pdf";
     link.download = "Avinash_Kumar.pdf";
     link.click();
   };

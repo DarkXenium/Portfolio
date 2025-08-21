@@ -90,8 +90,8 @@ const Image = styled(motion.img)`
   position: absolute;
   width: 100%;
   height: 100%;
-  max-width: 15rem;
-  max-height: 15rem;
+  max-width: 6rem;
+  max-height: 6rem;
 `;
 
 const ColumnRight = styled.div`
@@ -103,32 +103,32 @@ const ColumnRight = styled.div`
   overflow: hidden;
 
   ${Image}:nth-child(1) {
-    top: 1rem;
-    left: 5px;
+    top: 5rem;
+    left: -1rem;
 
     ${media.desktop} {
-      top: 6rem;
-      width: 140px;
-      height: 150px;
+      top: 4rem;
+      width: 80px;
+      height: 78px;
     }
   }
 
   ${Image}:nth-child(2) {
-    top: 0rem;
+    top: 4rem;
     right: 30px;
-    width: 600px;
-    height: 160px;
+    width: 10rem;
+    height: 4rem;
     ${media.desktop} {
-      top: 18rem;
-      width: 193px;
-      height: 128px;
+      top: 1rem;
+      width: 100px;
+      height: 59px;
       left: -8px;
     }
   }
 
   ${Image}:nth-child(3) {
-    top: 26rem;
-    right: 1rem;
+    top: 31rem;
+    right: -3rem;
     ${media.desktop} {
       top: 30rem;
       left: 2rem;
@@ -252,7 +252,7 @@ const Landing = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1 } }}
           >
-            <img id="selfPortrait" src="images/selfPortrait.webp  " alt="selfPortrait" />
+            <img id="selfPortrait" src="images/portrait.png  " alt="selfPortrait" />
           </motion.div>
         </ColumnRight>
       </Container>
