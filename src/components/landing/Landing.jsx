@@ -107,7 +107,8 @@ const ColumnRight = styled.div`
     left: -1rem;
 
     ${media.desktop} {
-      top: 4rem;
+      top: 10rem;
+      left: -15rem;
       width: 80px;
       height: 78px;
     }
@@ -119,10 +120,9 @@ const ColumnRight = styled.div`
     width: 10rem;
     height: 4rem;
     ${media.desktop} {
-      top: 1rem;
-      width: 100px;
-      height: 59px;
-      left: -8px;
+      top: 10rem;
+      height: 80px;
+      right: -4rem;
     }
   }
 
@@ -130,8 +130,8 @@ const ColumnRight = styled.div`
     top: 31rem;
     right: -3rem;
     ${media.desktop} {
-      top: 30rem;
-      left: 2rem;
+      top: 32rem;
+      left: 18rem;
       width: 170px;
       height: 180px;
     }
@@ -162,15 +162,16 @@ const Landing = () => {
             initial="hidden"
             animate="visible"
             transition={{ duration: 1.5 }}
+            id="intro-name"
           >
-            I'm Avinash Kumar  Full Stack Developer
+            I'm Avinash Kumar  Full Stack <b>Developer</b>
           </motion.p>
           <motion.h2
             initial={{ scale: 1.2 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1.5 }}
           >
-            Welcome to my personal portfolio. <br />Explore, interact, and get to know me better!
+            <p id = "main-intro">Welcome to my personal portfolio.</p> <br />Explore, interact, and get to know me better!
           </motion.h2>
           <motion.h2
             id="vertical"

@@ -34,7 +34,7 @@ const Experience = () => {
       <div className="timeline-container">
         <ul className="timeline">
           <li>
-            <div className="timeline-photo">
+            <div className="timeline-photo tr">
               <a href="https://thomsonreuters.com/" target="_blank">
                 <img src="images/trLogo.png" alt="thomsonreuters Logo" />
               </a>
