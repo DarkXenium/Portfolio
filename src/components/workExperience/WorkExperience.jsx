@@ -43,10 +43,10 @@ const Experience = () => {
               <small className="date">May 2025 - <bold id="presentColor">PRESENT</bold></small>
               <h2 id="curiousjr">Thomson Reuters</h2>
               <h3 className="positionTitle">
-                Software Engineer
+                Software Engineer I
               </h3>
               <p className="companyInfo">
-                1. Contributed to the development of enterprise-grade legal and financial technology solutions, ensuring reliability and compliance with industry standards. 
+                1. Contributed to the development of enterprise-grade legal and financial technology solutions, ensuring reliability and compliance with industry standards.
                 2. Worked extensively with <b>C#, .NET</b> for back-end development and <b>React JS</b> for crafting user-centric, responsive front-end interfaces.
                 3. Collaborated closely with cross-functional teams to implement scalable APIs and microservices that improved data flow and performance.
                 4. Involved in performance optimization, debugging, and code reviews to uphold code quality, security, and maintainability.

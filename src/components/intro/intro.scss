@@ -10,23 +10,28 @@
         flex-direction: column;
         align-items: center;
     }
+
     h2 {
         color: white;
     }
+
     h1 {
         color: white;
         font-weight: 400;
         font-size: 20px;
     }
+
     h3 {
         color: white;
     }
+
     .left {
         flex: 0.5;
         overflow: hidden;
         display: flex;
         flex-direction: column;
         margin-left: 10vmin;
+
         .imgContainer {
             overflow: hidden;
             height: 750px;
@@ -35,46 +40,51 @@
             display: flex;
             position: absolute;
             flex-direction: column;
-            justify-content:flex-end;
+            justify-content: flex-end;
             transition: all 1s ease-in-out;
+
             @include mobile {
                 height: 500px;
                 left: -23vmin;
                 bottom: -60vmax;
                 margin: 0;
             }
-            
-            img{
+
+            img {
                 left: 120px;
-                height:90%;
+                height: 90%;
                 position: absolute;
                 // transition: bottom 1s ease, left 1s ease;
                 transition: all 1s ease;
+
                 @include mobile {
                     left: 10px;
                     height: 97%;
                 }
             }
-            
-            &:hover{
-                .bg{
+
+            &:hover {
+                .bg {
                     left: 10%;
                     transition: all 1s ease;
+
                     @include mobile {
                         left: -2.5rem;
                         transform: scale(0.8);
                         transition: all 1s ease;
                     }
                 }
-                .myphoto{
+
+                .myphoto {
                     left: 20%;
+
                     @include mobile {
                         transform: scale(0.9);
                         left: 50px;
                     }
                 }
-            }          
-            
+            }
+
             @include mobile {
                 align-items: flex-start;
                 margin-left: 100px;
@@ -82,10 +92,11 @@
 
         }
     }
-    
+
     .right {
         flex: 0.5;
         position: relative;
+
         .wrapper {
             width: 100%;
             height: 100%;
@@ -95,30 +106,33 @@
             justify-content: center;
             text-align: justify;
 
-            .btnContainers{
+            .btnContainers {
                 display: flex;
                 // justify-content: flex-start;
                 flex-direction: row;
                 position: relative;
-                .btn2{
+
+                .btn2 {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
                 }
-                .btn2drive{
+
+                .btn2drive {
                     display: flex;
                     align-items: center;
                     flex-direction: row;
-                    #previewSVG{
+
+                    #previewSVG {
                         padding-left: 1vmin;
 
-                        @include mobile{
+                        @include mobile {
                             height: 4.5vmin;
                         }
                     }
                 }
             }
-            
+
             @include mobile {
                 padding-left: 0px;
                 align-items: center;
@@ -138,12 +152,14 @@
                     margin-bottom: 1vmax;
                 }
             }
+
             h2 {
                 font-family: "Roboto Mono", monospace;
                 font-size: 3vmin;
                 font-weight: 18;
                 margin-right: 10vmin;
                 padding: 10px;
+
                 @include mobile {
                     font-size: 18px;
                     margin-right: 0px;
@@ -152,6 +168,7 @@
                     text-align: justify;
                 }
             }
+
             h3 {
                 font-size: 4vmin;
                 padding: 10px;
@@ -160,10 +177,12 @@
                 @include mobile {
                     font-size: 25px;
                 }
+
                 span {
                     font-size: inherit;
                     color: rgb(98, 0, 211);
                 }
+
                 .ityped-cursor {
                     animation: blink 1s infinite;
                 }
@@ -172,12 +191,14 @@
                     50% {
                         opacity: 1;
                     }
+
                     100% {
                         opacity: 0;
                     }
                 }
             }
         }
+
         a {
             position: absolute;
             bottom: 10px;
@@ -190,6 +211,7 @@
                 margin-bottom: 60px;
                 -webkit-filter: invert(100%);
                 filter: invert(100%);
+
                 @include mobile {
                     display: none;
                 }
@@ -203,25 +225,54 @@
         }
     }
 }
-#driveBtn{
+
+#driveBtn {
     display: flex;
     align-items: center;
-    @include mobile{
+
+    @include mobile {
         font-size: 4vmin;
         padding: 8px 1rem;
     }
 }
- .intro .right .wrapper h2 {
-    @include mobile{
+
+.intro .right .wrapper h2 {
+    @include mobile {
         font-size: 3.5vmin;
     }
 }
 
+.pdfContainer {
+    height: 100%;
+    overflow: hidden;
+}
+
+.pdfContainer,
+.pdfContainer * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.pdfContainer::-webkit-scrollbar,
+.pdfContainer *::-webkit-scrollbar {
+    display: none;
+}
+
+/* ensure react-pdf-viewer internal containers don't force scrollbars */
+.pdfContainer .rpv-core__viewer,
+.pdfContainer .rpv-core__page,
+.pdfContainer .rpv-core__inner-page,
+.pdfContainer .rpv-core__page-layer {
+    overflow: hidden !important;
+    height: 100% !important;
+}
+
 @media screen and (max-width: 768px) {
-  .pdfContainer {
-    display: none !important;
-  }
-  .intro .left  {
-    display: none !important;
-  }
+    .pdfContainer {
+        display: none !important;
+    }
+
+    .intro .left {
+        display: none !important;
+    }
 }

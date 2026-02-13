@@ -77,14 +77,7 @@ export default function Profiles() {
       title: "https://www.linkedin.com/in/avinash-kumar03/",
       img: "images/linkedin.webp",
       desc: "I try to learn new technologies and implement them through projects. And what better place to showcase them than here.",
-    },
-    {
-      id: 6,
-      name: "Instagram",
-      title: "https://www.instagram.com/avinash.2077k/",
-      img: "images/insta.webp",
-      desc: "I try to learn new technologies and implement them through projects. And what better place to showcase them than here.",
-    },
+    }
   ];
   return (
     <div ref={ref} className="profiles" id="profiles">

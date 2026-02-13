@@ -1,60 +1,34 @@
-.landing {
+/* Landing-specific styling only. Avoid modifying global html/body overflow. */
+#landing {
+  background: #0a0a0a;
+  min-height: 100vh;
+  overflow: hidden;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/* Additional refinements */
+@media screen and (max-width: 768px) {
+  #landing {
+    padding: 2rem 1.5rem;
+  }
+}
+
+#landing #about-me-button {
+  font-size: 3vmin;
+  padding: 2vmin 7vmin;
+}
+
+#landing #vertical {
+  font-size: 3vmin;
+}
+
+NameHeading {
   overflow: hidden;
 }
 
-b {
-  overflow: hidden;
-  color: crimson;
-}
-#intro-name{
-  font-size: 5vmin;
-}
-#main-intro{
-  font-size: 4vmin;
-  margin: 0;
-}
-.floatImgs {
-  cursor: pointer;
-}
-
-.floatImgs:hover {
-  scale: 0.99;
-}
-
-#selfPortrait {
-  width: 70%;
-  border-radius: 30px;
-}
-
-.selfPortrait {
-  display: flex;
-  justify-content: center;
-}
-
-// Mobile view css
-@media screen and (max-width:450px) {
-  #landing p {
-    font-size: 7vmin;
-  }
-
-  #landing h1 {
-    font-size: 6vmin;
-  }
-
-  #landing h2 {
-    font-size: 4vmin;
-  }
-
-  #landing #about-me-button {
-    font-size: 3vmin;
-    padding: 2vmin 7vmin;
-  }
-
-  #landing #vertical {
-    font-size: 3vmin;
-  }
-
-}
 .columnLeft {
   margin: 0 0 0 100px;
   padding: 0;
@@ -118,19 +92,24 @@ b {
     width: 65%;
     padding: 1rem 1rem;
   }
+
   #landing p {
     font-size: 4vmin;
   }
+
   #landing h1 {
     font-size: 5vmin;
   }
+
   #landing h2 {
     font-size: 4vmin;
   }
+
   .floatImgs {
     max-width: 3rem;
     max-height: 3rem;
   }
+
   #selfPortrait {
     width: 100%;
   }

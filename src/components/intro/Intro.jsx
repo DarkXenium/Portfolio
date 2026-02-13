@@ -3,7 +3,7 @@ import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Worker, Viewer } from '@react-pdf-viewer/core';
+import { Worker, Viewer, SpecialZoomLevel } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import styled from "styled-components";
 
@@ -76,18 +76,18 @@ export default function Intro() {
   return (
     <div ref={ref} className="intro" id="intro">
       <motion.div className="left resume-holder" animate={animationLeft}>
-          <div
-            className="pdfContainer"
-            style={{
-              overflow: "hidden",
-              width: "100%",
-              borderRadius: "8px",
-            }}
-          >
-          </div>
-        <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
-          <Viewer fileUrl="/Avinash_Kumar.pdf" />
-        </Worker>
+        <div
+          className="pdfContainer"
+          style={{
+            overflow: "hidden",
+            width: "100%",
+            borderRadius: "8px",
+          }}
+        >
+          <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
+            <Viewer fileUrl="/Avinash_Kumar.pdf" defaultScale={SpecialZoomLevel.PageWidth} />
+          </Worker>
+        </div>
       </motion.div>
       <motion.div className="right" animate={animation}>
         <div className="wrapper">
@@ -139,7 +139,7 @@ export default function Intro() {
             </div>
           </div>
           <h2 className="introParagraph">
-            As a dedicated Software Engineer based in Bangalore with over 2 years of professional experience, I’ve contributed to impactful projects at SafeSend and CuriousJr. My core strengths lie in full-stack development, with expertise in C#, .NET, React JS, and MS SQL — delivering robust back-end systems and seamless front-end experiences.
+            As a dedicated Software Engineer based in Bangalore with 2.5+ years of professional experience, I’ve contributed to impactful projects at SafeSend and CuriousJr. My core strengths lie in full-stack development, with expertise in C#, .NET, React JS, and MS SQL — delivering robust back-end systems and seamless front-end experiences.
             I hold certifications in Azure, React JS, SQL, front-end development, and both high-level and low-level system design. My passion for continuous learning and clean, scalable code makes me a reliable and growth-focused contributor to any development team.
           </h2>
           <h1>Some of things I am interested in </h1>
