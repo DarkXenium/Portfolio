@@ -56,7 +56,7 @@ export default function Project() {
             </div>
           </div>
           <div class="right">
-            <h2 class="project-title">Pokemon ElipseZ</h2>
+            <h2 class="project-title">Pokemon EliseZ</h2>
             <h3 class="project-sub-title">
               <b>A Web-Game</b>
             </h3>

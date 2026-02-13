@@ -3,6 +3,8 @@ import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Worker, Viewer } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
 import styled from "styled-components";
 
 const Button = styled(motion.button)`
@@ -73,10 +75,19 @@ export default function Intro() {
 
   return (
     <div ref={ref} className="intro" id="intro">
-      <motion.div className="left" animate={animationLeft}>
-        <div className="imgContainer">
-          <img src="images/resume.jpg" alt="Resume_Image" />
-        </div>
+      <motion.div className="left resume-holder" animate={animationLeft}>
+          <div
+            className="pdfContainer"
+            style={{
+              overflow: "hidden",
+              width: "100%",
+              borderRadius: "8px",
+            }}
+          >
+          </div>
+        <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
+          <Viewer fileUrl="/Avinash_Kumar.pdf" />
+        </Worker>
       </motion.div>
       <motion.div className="right" animate={animation}>
         <div className="wrapper">

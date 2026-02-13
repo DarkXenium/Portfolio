@@ -26,6 +26,7 @@
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        margin-left: 10vmin;
         .imgContainer {
             overflow: hidden;
             height: 750px;
@@ -185,7 +186,7 @@
                 width: 60px;
                 animation: arrowBlink 3s infinite;
                 position: relative;
-                top: -25;
+                top: 5vmin;
                 margin-bottom: 60px;
                 -webkit-filter: invert(100%);
                 filter: invert(100%);
@@ -212,6 +213,15 @@
 }
  .intro .right .wrapper h2 {
     @include mobile{
-        font-size: 4vmin;
+        font-size: 3.5vmin;
     }
+}
+
+@media screen and (max-width: 768px) {
+  .pdfContainer {
+    display: none !important;
+  }
+  .intro .left  {
+    display: none !important;
+  }
 }

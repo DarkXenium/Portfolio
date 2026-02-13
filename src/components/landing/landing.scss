@@ -6,7 +6,13 @@ b {
   overflow: hidden;
   color: crimson;
 }
-
+#intro-name{
+  font-size: 5vmin;
+}
+#main-intro{
+  font-size: 4vmin;
+  margin: 0;
+}
 .floatImgs {
   cursor: pointer;
 }
@@ -51,4 +57,81 @@ b {
 }
 .columnLeft {
   margin: 0 0 0 100px;
+  padding: 0;
+}
+
+// ...existing code...
+
+@media screen and (max-width: 768px) {
+  #landing {
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  .columnLeft {
+    margin: 0 0 0 10px;
+    padding: 1rem 0.5rem;
+    align-items: flex-start;
+  }
+
+  #landing p {
+    font-size: 5vmin;
+  }
+
+  #landing h1 {
+    font-size: 6vmin;
+  }
+
+  #landing h2 {
+    font-size: 4vmin;
+  }
+
+  #landing #about-me-button {
+    font-size: 3vmin;
+    padding: 2vmin 7vmin;
+  }
+
+  #landing #vertical {
+    font-size: 3vmin;
+    position: static;
+    writing-mode: horizontal-tb;
+    margin-top: 1rem;
+  }
+
+  .selfPortrait {
+    margin-top: 1rem;
+  }
+
+  .floatImgs {
+    max-width: 4rem;
+    max-height: 4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .columnLeft {
+    margin: 0;
+    width: 65%;
+    padding: 1rem 1rem;
+  }
+  #landing p {
+    font-size: 4vmin;
+  }
+  #landing h1 {
+    font-size: 5vmin;
+  }
+  #landing h2 {
+    font-size: 4vmin;
+  }
+  .floatImgs {
+    max-width: 3rem;
+    max-height: 3rem;
+  }
+  #selfPortrait {
+    width: 100%;
+  }
 }
