@@ -1,7 +1,7 @@
 import "./contact.scss"
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 export default function Contact() {
     const { ref, inView } = useInView({
         threshold: 0.2
@@ -43,11 +43,11 @@ export default function Contact() {
                 <img src="images/shake.svg" alt="handshake" />
             </div>
             <div className="right">
-                <h2>Contac<b>t.</b></h2>
+                <motion.h1 className="heading" animate={animationLeft}>Contac<b>t.</b></motion.h1>
                 {(() => {
                     const recipient = 'avinash2k20@gmail.com';
                     const subject = encodeURIComponent('Opportunity / Hello');
-                    const body = encodeURIComponent('Hi Avinash,%0D%0A%0D%0AI have an opportunity / question for you. Please reply when convenient.%0D%0A%0D%0AThanks,');
+                    const body = encodeURIComponent('Hi Avinash, have an opportunity / question for you. Please reply when convenient. Thanks,');
 
                     const sendEmail = () => {
                         window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
@@ -59,9 +59,8 @@ export default function Contact() {
                                 <h3>Have a job or project?</h3>
                                 <p>I'm open to new opportunities — engineering, frontend, or collaboration. Drop me a line and I'll get back to you.</p>
                                 <div className="tag-row">
-                                    <span className="role">Engineering</span>
+                                    <span className="role">Backend</span>
                                     <span className="role">Frontend</span>
-                                    <span className="role">Mentoring</span>
                                 </div>
                                 <motion.button
                                     type="button"

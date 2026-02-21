@@ -22,7 +22,7 @@ export default function Project() {
         },
       });
       animationLeft.start({
-        opacity: 1,
+        opacity: 0.9,
         transition: {
           duration: 3,
         },
@@ -41,7 +41,7 @@ export default function Project() {
   }, [inView]);
 
   return (
-    <div div ref={ref} className="projects" id="projects">
+    <div ref={ref} className="projects" id="projects">
       <motion.h1 className="heading" animate={animationLeft}>
         PROJECTS
       </motion.h1>
@@ -49,33 +49,33 @@ export default function Project() {
         Have a look at some of my recent-<b>work!</b>
       </motion.h3>
       <div className="projectsContainer">
-        <motion.div class="item" animate={animation}>
-          <div class="left">
-            <div class="img">
-              <img class="pokemon" src="images/poke1.webp" alt="" />
+        <motion.div className="item" animate={animation}>
+          <div className="left">
+            <div className="img">
+              <img className="pokemon" src="images/poke1.webp" alt="" />
             </div>
           </div>
-          <div class="right">
-            <h2 class="project-title">Pokemon EliseZ</h2>
-            <h3 class="project-sub-title">
+          <div className="right">
+            <h2 className="project-title">Pokemon EliseZ</h2>
+            <h3 className="project-sub-title">
               <b>A Web-Game</b>
             </h3>
-            <p class="project-desc">
+            <p className="project-desc">
               It is a 1v1 Pokemon battle game where the user fights against the
               computer, having their very own pokemon. The user has to choose
               from a set of 4 moves which will effective or ineffective based on
               the Pokemon-typings.
             </p>
-            <div class="buttons">
+            <div className="buttons">
               <a
                 href="https://github.com/DarkXenium/PokemonEclipse"
-                class="primary-btn"
+                className="primary-btn"
               >
                 Source Code
               </a>
               <a
                 href="https://pokemon-elisez.netlify.app/"
-                class="primary-btn outline external-link"
+                className="primary-btn outline external-link"
               >
                 <span>Preview</span>
                 <svg
@@ -85,9 +85,9 @@ export default function Project() {
                   stroke="currentColor"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                   />
                 </svg>
@@ -95,33 +95,33 @@ export default function Project() {
             </div>
           </div>
         </motion.div>
-        <motion.div class="item" animate={animation}>
-          <div class="left">
-            <div class="img">
-              <img class="pokemon" src="images/Desktop - 1.webp" alt="" />
+        <motion.div className="item" animate={animation}>
+          <div className="left">
+            <div className="img">
+              <img className="pokemon" src="images/Desktop - 1.webp" alt="" />
             </div>
           </div>
-          <div class="right">
-            <h2 class="project-title">A Blog Website</h2>
-            <h3 class="project-sub-title">
+          <div className="right">
+            <h2 className="project-title">A Blog Website</h2>
+            <h3 className="project-sub-title">
               <b>A Mongodb Backend React Blog</b>
             </h3>
-            <p class="project-desc">
+            <p className="project-desc">
               It is a Blogging website where users can Create their Account,
               read other user's blogs and also write their own and publish it to
               the world. The users can also Edit/Delete their blogs. It is a
               complete MERN stack application.
             </p>
-            <div class="buttons">
+            <div className="buttons">
               <a
                 href="https://github.com/DarkXenium/mernStackBlogwebsite"
-                class="primary-btn"
+                className="primary-btn"
               >
                 Source Code
               </a>
               <a
                 href="https://darkxenium-blogs.onrender.com/"
-                class="primary-btn outline external-link"
+                className="primary-btn outline external-link"
               >
                 <span>Preview</span>
                 <svg
@@ -131,9 +131,9 @@ export default function Project() {
                   stroke="currentColor"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                   />
                 </svg>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
-import { useEffect} from 'react'
+import { useEffect } from 'react'
 import "./work.scss";
 
 export default function Work() {
@@ -16,7 +16,7 @@ export default function Work() {
       animation.start({
         x: 0,
         transition: {
-          type: 'spring', duration: 0.1, ease: "easeOut",bounce:0.7
+          type: 'spring', duration: 0.1, ease: "easeOut", bounce: 0.7
         }
       });
       animationLeft.start({
@@ -74,7 +74,7 @@ export default function Work() {
 
   return (
     <div ref={ref} className="works" id="works">
-      <motion.h3
+      <motion.h3 className="headingWork"
         animate={animationLeft}
       >My_<b> UI/UX_</b>Designs.</motion.h3>
       <motion.div
@@ -82,10 +82,10 @@ export default function Work() {
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
-          <div className="container">
+          <div key={d.id} className="container">
             <motion.div className="item"
-              whileHover={{ opacity: 1, backgroundColor: "#3c38b0",scale:0.99}}
-              transition={{duration:1}}
+              whileHover={{ opacity: 1, backgroundColor: "#3c38b0", scale: 0.99 }}
+              transition={{ duration: 1 }}
 
             >
               <div className="left">
@@ -99,8 +99,8 @@ export default function Work() {
               </div>
               {/* <a href="https://dribbble.com/shots/16286967-Pokemon-Eclipse/attachments/8159151?mode=media"> */}
               <motion.div className="right"
-              whileHover={{rotate:20,scale:1.1 }}
-              transition={{duration:1}}
+                whileHover={{ rotate: 20, scale: 1.1 }}
+                transition={{ duration: 1 }}
               >
                 <img
                   src={d.img}

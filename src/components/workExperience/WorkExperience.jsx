@@ -1,7 +1,7 @@
 import "./workExperience.scss";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 const Experience = () => {
   const animationLeft = useAnimation();
   const { ref, inView } = useInView({
@@ -10,9 +10,9 @@ const Experience = () => {
   useEffect(() => {
     if (inView) {
       animationLeft.start({
-        opacity: 1,
+        opacity: 0.99,
         transition: {
-          duration: 3,
+          duration: 2,
         },
       });
     }
@@ -23,7 +23,7 @@ const Experience = () => {
     }
   }, [inView]);
   return (
-    <div div ref={ref} className="experience" id="experience">
+    <div ref={ref} className="experience" id="experience">
       <motion.h1 className="heading" animate={animationLeft}>
         MY EXPERIENCES
       </motion.h1>
@@ -40,7 +40,7 @@ const Experience = () => {
               </a>
             </div>
             <div className="timeline-content">
-              <small className="date">May 2025 - <bold id="presentColor">PRESENT</bold></small>
+              <small className="date">May 2025 - <span id="presentColor">PRESENT</span></small>
               <h2 id="curiousjr">Thomson Reuters</h2>
               <h3 className="positionTitle">
                 Software Engineer I

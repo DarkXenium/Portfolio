@@ -1,5 +1,6 @@
 @import "../../global.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
+
 .progress {
   background-color: $mainColor;
   display: flex;
@@ -20,19 +21,22 @@
       padding: 10px 0px;
     }
   }
+
   h3 {
     overflow: hidden;
     font-family: "Roboto Mono", monospace;
     color: white;
     font-weight: 400;
     font-size: 3vmin;
-    padding: 10px;
+    padding-bottom: 10px;
     margin: 4px;
     margin-bottom: 5vmin;
+
     @include mobile {
       padding: 30px;
     }
   }
+
   .container {
     width: 90%;
     height: 120%;

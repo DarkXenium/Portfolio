@@ -1,5 +1,6 @@
 @import "../../global.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
+
 .works {
   display: flex;
   align-items: center;
@@ -8,16 +9,17 @@
   height: 80%;
   position: relative;
 
-  h1{
+  h1 {
     display: flex;
     position: absolute;
     z-index: 1;
     top: 18px;
     font-size: 38px;
     color: white;
-    
+
   }
-  h3{
+
+  h3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,19 +31,21 @@
     top: 0px;
     font-size: 22px;
     color: white;
-    @include mobile{
+
+    @include mobile {
       margin: 10px 10px;
     }
   }
+
   .arrow {
     height: 50px;
     position: absolute;
     cursor: pointer;
 
-    @include mobile{
+    @include mobile {
       display: none;
     }
-  
+
     &.left {
       left: 100px;
       transform: rotateY(180deg);
@@ -59,12 +63,12 @@
     left: 0;
     transition: all 1s ease-out;
 
-    @include mobile{
+    @include mobile {
       height: 700px;
       flex-direction: column;
       justify-content: center;
     }
-   
+
     .container {
       width: 100vw;
       display: flex;
@@ -72,9 +76,10 @@
       align-items: center;
       justify-content: center;
 
-      @include mobile{
+      @include mobile {
         height: 30%;
       }
+
       .item {
         width: 650px;
         height: 100%;
@@ -85,7 +90,7 @@
         align-items: center;
         justify-content: center;
 
-        @include mobile{
+        @include mobile {
           width: 90%;
           height: 160px;
           margin-bottom: 20px;
@@ -100,7 +105,7 @@
           align-items: center;
           justify-content: center;
 
-          @include mobile{
+          @include mobile {
             height: 100%;
             padding: 10px;
             padding-top: 40px;
@@ -113,9 +118,9 @@
             flex-direction: column;
             justify-content: space-between;
 
-            @include mobile{
+            @include mobile {
               height: 100%;
-              
+
             }
 
             .imgContainer {
@@ -126,58 +131,63 @@
               display: flex;
               align-items: center;
               justify-content: center;
-              
-              @include mobile{
+
+              @include mobile {
                 width: 40px;
                 height: 42px;
                 margin-top: 5px;
               }
-              
+
               img {
                 width: 40px;
-                @include mobile{
+
+                @include mobile {
                   width: 30px;
                   overflow: hidden;
                 }
               }
             }
+
             h2 {
               font-size: 20px;
               color: white;
-              
-              @include mobile{
+
+              @include mobile {
                 font-size: 15px;
                 overflow: hidden;
               }
-              
+
             }
+
             p {
               color: white;
               font-size: 13px;
-              
-              @include mobile{
+
+              @include mobile {
                 line-height: 93%;
                 font-size: 12px;
                 overflow: hidden;
               }
 
             }
+
             span {
               font-size: 18px;
               font-weight: 600;
               cursor: pointer;
-              
-              a{
+
+              a {
                 color: crimson;
                 text-decoration: none;
-                
-                @include mobile{
+
+                @include mobile {
                   display: none;
                 }
               }
             }
           }
         }
+
         .right {
           flex: 6;
           height: 100%;
@@ -186,9 +196,9 @@
           justify-content: center;
           overflow: hidden;
 
-          @include mobile{
-           flex: 4 1; 
-            
+          @include mobile {
+            flex: 4 1;
+
           }
 
           img {
@@ -196,7 +206,7 @@
             height: 300px;
             transform: rotate(-12deg);
 
-            @include mobile{
+            @include mobile {
               width: 150px;
               transform: rotate(-9deg);
             }

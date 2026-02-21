@@ -4,7 +4,7 @@ import Work from "./components/work/Work";
 import Profiles from "./components/profiles/Profiles";
 import Contacts from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
-import Progress from "./components/progress/Progress";
+import Skills from "./components/skills/Skills";
 import Landing from "./components/landing/Landing";
 import Project from "./components/projects/Project";
 import Experience from "./components/workExperience/WorkExperience";
@@ -24,7 +24,7 @@ function App() {
         <Project />
         <Experience />
         <Work />
-        <Progress />
+        <Skills />
         <Profiles />
         <Contacts />
       </div>

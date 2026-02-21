@@ -1,15 +1,16 @@
-import "./progress.scss"
+import "./skills.scss"
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useRef } from 'react'
 
-export default function Progress() {
+export default function Skills() {
 
     const { ref, inView } = useInView({
         threshold: 0.2
     });
     const animation = useAnimation();
     const animationLeft = useAnimation();
+    const animationHeading = useAnimation();
     useEffect(() => {
         if (inView) {
             animation.start({
@@ -20,10 +21,16 @@ export default function Progress() {
             });
             animationLeft.start({
                 x: 0,
-                opacity: 1,
+                opacity: 0.9,
                 transition: {
                     type: 'spring', duration: 2, bounce: 0.3
                 }
+            });
+            animationHeading.start({
+                opacity: 0.99,
+                transition: {
+                    duration: 2,
+                },
             });
         }
         if (!inView) {
@@ -34,17 +41,19 @@ export default function Progress() {
             animationLeft.start({
                 x: '-100vw',
                 opacity: 0
-
             });
 
+            animationHeading.start({
+                opacity: 0,
+            });
         }
     }, [inView]);
 
 
     return (
         <div ref={ref} className="progress" id="progress">
-            <h1>SKILLS</h1>
-            <h3>Some of the programming languages and frameworks that I know and work <b>with</b>. </h3>
+            <motion.h1 className="heading" animate={animationHeading}>SKILLS</motion.h1>
+            <motion.h3 animate={animationHeading}> Some of the programming languages and frameworks that I know and work <b>with</b>. </motion.h3>
             <motion.div className="container"
                 animate={animationLeft}
             >

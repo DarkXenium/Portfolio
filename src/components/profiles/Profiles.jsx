@@ -25,7 +25,7 @@ export default function Profiles() {
         opacity: 1,
         transition: {
           type: "spring",
-          duration: 2,
+          duration: 1,
           bounce: 0.3,
         },
       });
@@ -81,10 +81,10 @@ export default function Profiles() {
   ];
   return (
     <div ref={ref} className="profiles" id="profiles">
-      <h1>PROFILES</h1>
+      <motion.h1 className="heading" animate={animationLeft}>PROFILES</motion.h1>
       <motion.div className="container" animate={animation}>
         {data.map((d) => (
-          <motion.div
+          <motion.div key={d.id}
             className={d.featured ? "card featured" : "card"}
             drag
             dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
